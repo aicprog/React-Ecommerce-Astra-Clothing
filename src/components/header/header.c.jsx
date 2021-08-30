@@ -22,9 +22,15 @@ const Header = () => {
                         Shop
                     </Link>
 
-                    <Link className="menu-option" to='/contact'>
-                        Contact
+                    <Link className="menu-option" to='/signin'>
+                        Sign In
                     </Link>
+                </div>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
             </div>
            

@@ -1,8 +1,15 @@
+@import "../../assets/breakpoints.scss";
+
 .directory-menu {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
+    @include media("<=tablet"){
+     flex-direction: column;
+      
+  }
+
   }
   
