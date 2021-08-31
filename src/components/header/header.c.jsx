@@ -3,7 +3,10 @@ import './header.s.scss'
 import {Link} from 'react-router-dom'
 import { GiTargetShot } from 'react-icons/gi';
 
-const Header = () => {
+//firebase 
+import {auth} from '../../firebase/firebase.utils';
+
+const Header = ({currentUser}) => {
     return(
         <nav className='header'>
             <div className="header-wrapper">
@@ -22,9 +25,13 @@ const Header = () => {
                         Shop
                     </Link>
 
-                    <Link className="menu-option" to='/signin'>
-                        Sign In
-                    </Link>
+                    {currentUser ? 
+                        <div className="menu-option" onClick={() => auth.signOut()}>Sign Out</div>
+                        :
+                        <Link className="menu-option" to='/signin'>
+                            Sign In
+                        </Link>
+                    }
                 </div>
 
                 <div class="burger">

@@ -63,27 +63,31 @@
         font-weight: 600;
         text-transform: uppercase;
         transition: ease-out 0.5s;
+     
 
         &:hover{
           opacity: 0.8;
           padding-right: 5px;
+          cursor: pointer;
         }
       }
 
       @include media("<=tablet"){
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8.5vh;
-        z-index: 99;
-        background: linear-gradient(to right bottom, rgba(0, 0, 0,  0.7), rgba(0, 0, 0, 0.8));
-        backdrop-filter: blur(2rem);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: tranform 0.5s ease-in;
+        display:  none;
+      //   position: absolute;
+      //   right: 0px;
+      //   height: 92vh;
+      //   top: 8.5vh;
+      //   z-index: 99;
+      //   background: linear-gradient(to right bottom, rgba(0, 0, 0,  0.7), rgba(0, 0, 0, 0.8));
+      //   backdrop-filter: blur(2rem);
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: center;
+      //   width: 50%;
+      //   transform: translateX(100%);
+      //   transition: tranform 0.5s ease-in;
+      // 
       }
     }
 }
