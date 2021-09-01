@@ -1,8 +1,8 @@
 import React from 'react';
-import './custom-button.s.scss'
+import './rectangular-btn.s.scss'
 
 
-const CustomButton = ({children, isBlue, ...otherProps}) => {
+const RectangularButton = ({children, isBlue, ...otherProps}) => {
     return(
        <button className={`${isBlue ? 'blue': ''} custom-button`} {...otherProps}>
         {children}
@@ -11,4 +11,5 @@ const CustomButton = ({children, isBlue, ...otherProps}) => {
 }
 
 
-export default CustomButton
+export default RectangularButton
+

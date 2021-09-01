@@ -1,8 +1,8 @@
 import React from 'react';
-import CustomButton from '../custom-button/custom-button.c';
 import FormInput from '../form-input/form-input.c';
 import './sign-in.s.scss'
 import {signInWithgoogle} from '../../firebase/firebase.utils'
+import SquareButton from '../custom-buttons/rectangular-btn/rectangular-btn.c';
 
 
 class SignIn extends React.Component{
@@ -49,10 +49,10 @@ class SignIn extends React.Component{
                     required />
                     
                     <div className="button">
-                        <CustomButton type="submit">Submit</CustomButton>
-                        <CustomButton onClick={signInWithgoogle} isBlue>
+                        <SquareButton type="submit">Submit</SquareButton>
+                        <SquareButton onClick={signInWithgoogle} isBlue>
                             Sign in with Google
-                        </CustomButton>
+                        </SquareButton>
                     </div>
                 </form>
             </div>

@@ -1,0 +1,61 @@
+@import "../../../assets/breakpoints.scss";
+    
+    
+.hero-btn{
+    border-radius: 50px;
+    width: auto;
+    padding: 12px 40px;
+    font-size: 16px;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.4rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+
+
+    @include media("<=tablet"){
+        font-size: 12px;
+        width: 130px;
+        margin-right: 0;
+        letter-spacing: 0.2rem;
+    
+    }
+
+    @include media("<=phone"){
+        width: 110px;
+        padding: 12px 40px;
+        margin: 0 5px 0 5px;
+
+
+    }
+
+}
+
+.black{
+    background: #000;
+    opacity: 0.75;
+    color: #fff;
+    transition: ease-out 0.5s;
+
+    &:hover{
+        opacity: 1;
+
+    }
+}
+
+.white{
+    background: #fff;
+    opacity: 0.75;
+    color: #000;
+
+    &:hover{
+        opacity: 1;
+    }
+}

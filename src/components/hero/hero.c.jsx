@@ -1,7 +1,7 @@
 import React from 'react';
 import './hero.s.scss'
-import {Link} from 'react-router-dom'
 import imageBG from '../../assets/hero-img1.jpg'
+import RoundButton from '../custom-buttons/round-btn/round-btn.c';
 
 const Hero = () => {
     return (
@@ -13,12 +13,14 @@ const Hero = () => {
                     <h1 className="hero-text">Fall Collection is here.</h1>
                     <h1 className="hero-text-mb">Fall is here.</h1>
                     <div className="btn-wrapper">
-                        <Link className="hero-btn"  to='/shop'>
+                        <RoundButton isBlack goTo='/shop'>
                             Shop Fall
-                        </Link>
-                        <Link className="hero-btn" to='/shop'>
+                        </RoundButton>
+
+                        <RoundButton goTo='/shop'>
                             Shop all
-                        </Link>
+                        </RoundButton>
+
                     </div>
                 </div>
             </div>
