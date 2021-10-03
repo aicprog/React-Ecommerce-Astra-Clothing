@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import HomePage from './pages/homepage/homepage.c';
-import ShopPage from './pages/shop/shop.c';
+import HomePage from './pages/HomePage';
+import ShopPage from './pages/ShopPage';
 import {Switch, Route} from 'react-router-dom';
-import Header from './components/header/header.c';
-import SignInandSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.c';
+import Header from './components/header';
+import SignInandSignUpPage from './pages/LoginSignUp';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils'
 
 
@@ -56,6 +56,7 @@ class App extends React.Component {
           <Route path='/shop' component={ShopPage}/>
           <Route path='/signin' component={SignInandSignUpPage}/>
         </Switch>
+            
       </div>
     );
   }

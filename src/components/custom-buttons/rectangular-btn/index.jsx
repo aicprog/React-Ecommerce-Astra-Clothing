@@ -1,5 +1,5 @@
 import React from 'react';
-import './rectangular-btn.s.scss'
+import './rectangular-btn.scss'
 
 
 const RectangularButton = ({children, isBlue, ...otherProps}) => {

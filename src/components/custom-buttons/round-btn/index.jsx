@@ -1,5 +1,5 @@
 import React from 'react';
-import './round-btn.s.scss'
+import './round-btn.scss'
 import {Link} from 'react-router-dom'
 
 

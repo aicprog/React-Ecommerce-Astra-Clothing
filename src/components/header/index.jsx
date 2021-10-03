@@ -1,5 +1,5 @@
 import React from 'react'
-import './header.s.scss'
+import './header.scss'
 import {Link} from 'react-router-dom'
 import { GiTargetShot } from 'react-icons/gi';
 

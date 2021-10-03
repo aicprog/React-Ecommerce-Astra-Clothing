@@ -1,7 +1,7 @@
 import React from 'react';
-import './hero.s.scss'
+import './hero.scss'
 import imageBG from '../../assets/hero-img1.jpg'
-import RoundButton from '../custom-buttons/round-btn/round-btn.c';
+import RoundButton from '../custom-buttons/round-btn';
 
 const Hero = () => {
     return (

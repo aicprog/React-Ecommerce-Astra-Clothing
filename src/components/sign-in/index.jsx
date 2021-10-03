@@ -1,8 +1,9 @@
 import React from 'react';
-import FormInput from '../form-input/form-input.c';
-import './sign-in.s.scss'
-import {auth, signInWithgoogle} from '../../firebase/firebase.utils'
-import SquareButton from '../custom-buttons/rectangular-btn/rectangular-btn.c';
+import FormInput from '../form-input';
+import './sign-in.scss'
+import { auth, signInWithgoogle } from "../../firebase/firebase.utils";
+import SquareButton from '../custom-buttons/rectangular-btn';
+
 
 
 class SignIn extends React.Component{

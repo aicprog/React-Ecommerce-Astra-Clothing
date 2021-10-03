@@ -1,8 +1,8 @@
 
 import React from 'react';
-import RectangularButton from '../custom-buttons/rectangular-btn/rectangular-btn.c';
-import FormInput from '../form-input/form-input.c';
-import './sign-up.s.scss';
+import RectangularButton from '../custom-buttons/rectangular-btn';
+import FormInput from '../form-input';
+import './sign-up.scss';
 import {auth, createUserProfileDocument} from '../../firebase/firebase.utils'
 
 
