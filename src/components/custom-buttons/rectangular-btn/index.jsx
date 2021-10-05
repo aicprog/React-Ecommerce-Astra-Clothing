@@ -2,9 +2,9 @@ import React from 'react';
 import './rectangular-btn.scss'
 
 
-const RectangularButton = ({children, isBlue, ...otherProps}) => {
+const RectangularButton = ({children, isBlue, inverted, ...otherProps}) => {
     return(
-       <button className={`${isBlue ? 'blue': ''} custom-button`} {...otherProps}>
+       <button className={`${inverted ? 'inverted': ''} ${isBlue ? 'blue': ''} custom-button`} {...otherProps}>
         {children}
        </button>
     )
