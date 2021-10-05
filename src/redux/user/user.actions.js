@@ -1,6 +1,9 @@
 //actions that return objects
-import {SET_CURRENT_USER} from "../../utils/actions";
+import { UserActionTypes } from "./user.types";
 //comparable to this.setState
+
+const { SET_CURRENT_USER } = UserActionTypes;
+
 export const setCurrentUser = (user) => ({
 	type: SET_CURRENT_USER,
 	payload: user,
