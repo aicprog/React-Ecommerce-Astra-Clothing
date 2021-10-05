@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FormInput from '../form-input';
 import './sign-in.scss'
 import { auth, signInWithgoogle } from "../../firebase/firebase.utils";
@@ -6,17 +6,13 @@ import SquareButton from '../custom-buttons/rectangular-btn';
 
 
 
-class SignIn extends React.Component{
-    constructor(props){
-        super(props);
+const SignIn = () => {
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    
 
-        this.state={
-            email:'',
-            password:''
-        }
-    }
-    //clears out 
-    handleSubmit = async (event) =>{
+        //clears out 
+    const handleSubmit = async (event) =>{
         event.preventDefault();
 
         const {email, password} = this.state;
@@ -31,30 +27,29 @@ class SignIn extends React.Component{
         this.setState({email:'', password:''})
     }
 
-    handleChange = (event) =>{
+    const handleChange = (event) =>{
         const {value, name} = event.target
 
         this.setState({[name]: value})
     }
 
-    render(){
-        return (
+    return (
             <div className='sign-in'>
                 <h2 className="title">I already have an account</h2>
                 <span>Sign in with your email and password.</span>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={handleSubmit}>
                     <FormInput
                     name="email" 
-                    value={this.state.email}
-                    handleChange={this.handleChange}
+                    value={email}
+                    handleChange={handleChange}
                     label= "email"
                     required />
    
                     <FormInput 
                     name="password" 
                     type="password" 
-                    value={this.state.password}
-                    handleChange={this.handleChange}
+                    value={password}
+                    handleChange={handleChange}
                     label="password"
                     required />
                     
@@ -67,7 +62,7 @@ class SignIn extends React.Component{
                 </form>
             </div>
         )
-    }
 }
 
-export default SignIn;
+export default SignIn
+
