@@ -11,11 +11,25 @@ export const selectCartItems = createSelector (
     cart => cart.cartItems 
 )
 
+//get hidden state
+export const selectCartHidden = createSelector(
+    [selectCart], 
+    cart => cart.hidden 
+)
+
 //use quanitities of cart items to reduce to total quanitity
 export const selectCartItemsCount = createSelector(
 	[selectCartItems],
 	cartItems => cartItems.reduce((total, item) => {
 		total += item.quantity;
+		return total;
+	}, 0)
+);
+
+export const selectCartTotal = createSelector(
+	[selectCartItems],
+	cartItems => cartItems.reduce((total, item) => {
+		total += item.quantity * item.price;
 		return total;
 	}, 0)
 );
