@@ -9,7 +9,8 @@ import {selectCartItems } from "../../redux/cart/cart.selectors";
 import {createStructuredSelector} from 'reselect'
 import { Link } from 'react-router-dom'
 
-const CartDropdown = ({cartItems, toggleCartHidden}) => {
+const CartDropdown = ({cartItems, dispatch}) => {
+
     return (
 			<Container>
 				<div className="cart-items">
@@ -22,7 +23,7 @@ const CartDropdown = ({cartItems, toggleCartHidden}) => {
 					)}
 				</div>
 				<Link to="/checkout">
-					<RectangularBtn onClick={toggleCartHidden}>
+					<RectangularBtn onClick={() => dispatch(toggleCartHidden())}>
 						Go To checkout
 					</RectangularBtn>
 				</Link>
@@ -35,14 +36,11 @@ const mapStateToProps = createStructuredSelector({
 	cartItems: selectCartItems,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-	toggleCartHidden: () => dispatch(toggleCartHidden()),
-});
 
 
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(CartDropdown);
+export default connect(mapStateToProps)(CartDropdown);
 
 
 const Container = styled.div`
