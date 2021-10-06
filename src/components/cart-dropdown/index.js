@@ -1,17 +1,28 @@
 import React from 'react'
 import RectangularBtn from '../custom-buttons/rectangular-btn'
 import styled from 'styled-components'
+import { connect } from 'react-redux'
 
-const CartDropdown = () => {
+import CartItem from '../cart-item'
+
+const CartDropdown = ({cartItems}) => {
     return (
 			<Container>
-				<div className="cart-items" />
+				<div className="cart-items">
+					{cartItems.map((item) => {
+						return <CartItem key={item.id} item={item} />;
+					})}
+				</div>
 				<RectangularBtn>Go To checkout</RectangularBtn>
 			</Container>
 		);
 }
 
-export default CartDropdown
+const mapStateToProps = ({cart: {cartItems}}) =>({
+	cartItems
+})
+
+export default connect(mapStateToProps)(CartDropdown);
 
 
 const Container = styled.div`
