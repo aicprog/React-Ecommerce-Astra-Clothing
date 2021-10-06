@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const CheckoutItem = ({cartItem: {name, imageUrl, price, quantity}}) => {
+
+//redux 
+import { connect } from "react-redux";
+import { removeItemFromCart } from '../../redux/cart/cart.actions';
+
+const CheckoutItem = ({cartItem: {id, name, imageUrl, price, quantity}, removeItem}) => {
     return <Wrapper>
             <div className="image-container">
                 <img src={imageUrl} alt="item"/>
@@ -9,12 +14,16 @@ const CheckoutItem = ({cartItem: {name, imageUrl, price, quantity}}) => {
             <span className="name">{name}</span>
             <span className="quantity">{quantity}</span>
             <span className="price">${price}</span>
-            <div className="remove-button">&#10005;</div>
+            <div className="remove-button" onClick={() => removeItem(id)}>&#10005;</div>
     
     </Wrapper>;
 }
 
-export default CheckoutItem
+const mapDispatchToProps = (dispatch) => ({
+	removeItem: (id) => dispatch(removeItemFromCart(id)),
+});
+
+export default connect(null, mapDispatchToProps)(CheckoutItem)
 
 const Wrapper = styled.div`
     width: 100%;
