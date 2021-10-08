@@ -9,6 +9,7 @@ import Hero from "./hero";
 import MenuItem from "./menu-item";
 import SignUp from "./sign-in";
 import SignIn from "./sign-up";
+import CollectionsOverview from "./collections-overview"
 
 
 
@@ -23,5 +24,6 @@ export {
     Hero,
     MenuItem, 
     SignIn, 
-    SignUp
+    SignUp, 
+    CollectionsOverview
 };

@@ -13,71 +13,69 @@ import Header from './components/header';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils'
 import {connect} from 'react-redux'
 import {setCurrentUser} from './redux/user/user.actions'
+import {selectCurrentUser} from './redux/user/user.selectors'
 import {createStructuredSelector} from 'reselect'
 
+//props.currentUser.payload.user.currentUser;
+const App = (props, {currentUser}) => {
+	//let unsubscribeFromAuth = null;
 
-const App = (props) => {
-
-   let unsubscribeFromAuth = null
-
-  const {setCurrentUser} = props
-
+	const { setCurrentUser } = props;
 
 
-  useEffect(() => {
-    checkForUser()
-  }, [])
-  
-  const checkForUser = () => {
-    unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth =>{
-      
-      if(userAuth){
-        const userRef = await createUserProfileDocument(userAuth)
-      
-        userRef.onSnapshot(snapshot =>{
-          //console.log(snapshot.data());
-          setCurrentUser({
-            currentUser: {
-              id: snapshot.id,
-              ...snapshot.data()
-            }
-            
-          })         
-        })
-      }else{
-        setCurrentUser(null)
-     
-      }
+	useEffect(() => {
+		checkForUser();
+	}, []);
 
+	const checkForUser = () => {
+		return auth.onAuthStateChanged(async (userAuth) => {
+			if (userAuth) {
+				const userRef = await createUserProfileDocument(userAuth);
 
-    })
-  }
+				userRef.onSnapshot((snapshot) => {
+					//console.log(snapshot.data());
+					setCurrentUser({
+						currentUser: {
+							id: snapshot.id,
+							...snapshot.data(),
+						},
+					});
+				});
+			} else {
+				setCurrentUser(null);
+			}
+		});
+	};
 
-
-
-  return (
+	return (
 		<div>
 			<Header />
 			<Switch>
 				<Route exact path="/" component={HomePage} />
-				<Route exact path="/shop" component={ShopPage} />
+				<Route path="/shop" component={ShopPage} />
 				<Route
 					exact
 					path="/signin"
 					render={() =>
-						props.currentUser ? <Redirect to="/" /> : <LoginSignUp />
+						props.currentUser ? (
+							<Redirect to="/" />
+						) : (
+							<LoginSignUp/>
+              //<ShopPage/>
+						)
 					}
 				/>
 				<Route exact path="/checkout" component={CheckoutPage} />
 			</Switch>
 		</div>
 	);
-}
+};
 
 
-const mapStateToProps = (state) =>createStructuredSelector({
-  currentUser: setCurrentUser
-})
+const mapStateToProps = (state) =>
+	createStructuredSelector({
+		currentUser: selectCurrentUser,
+	});
 
 
 

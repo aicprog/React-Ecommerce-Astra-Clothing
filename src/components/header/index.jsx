@@ -41,7 +41,10 @@ const Header = ({currentUser, hidden}) => {
 						</Link>
 
 						{currentUser ? (
-							<div className="menu-option" onClick={() => auth.signOut()}>
+							<div
+								className="menu-option"
+								onClick={() => auth.signOut()}
+							>
 								Sign Out
 							</div>
 						) : (
@@ -49,9 +52,12 @@ const Header = ({currentUser, hidden}) => {
 								Sign In
 							</Link>
 						)}
-						<CartIcon/>
+						
+						<CartIcon className="menu-option"/>
+
+						
 					</div>
-					{hidden ? null : <CartDropdown/>}
+					{hidden ? null : <CartDropdown />}
 
 					<div className="burger">
 						<div className="line1"></div>
