@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import FormInput from '../form-input';
+
 import './sign-in.scss'
 import { auth, signInWithgoogle } from "../../firebase/firebase.utils";
 import SquareButton from '../custom-buttons/rectangular-btn';
 
 import './sign-in.scss';
+import  {SignUpInputForm} from '../form-input';
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -37,36 +38,36 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <div className='sign-in'>
-        <h2>I already have an account</h2>
-        <span>Sign in with your email and password</span>
+			<div className="sign-in">
+				<h2>I already have an account</h2>
+				<span>Sign in with your email and password</span>
 
-        <form onSubmit={this.handleSubmit}>
-          <FormInput
-            name='email'
-            type='email'
-            handleChange={this.handleChange}
-            value={this.state.email}
-            label='email'
-            required
-          />
-          <FormInput
-            name='password'
-            type='password'
-            value={this.state.password}
-            handleChange={this.handleChange}
-            label='password'
-            required
-          />
-          <div className='button'>
-            <SquareButton type="submit">Submit</SquareButton>
-            <SquareButton onClick={signInWithgoogle} isBlue>
-                Sign in with Google
-            </SquareButton>
-          </div>
-        </form>
-      </div>
-    );
+				<form onSubmit={this.handleSubmit}>
+					<SignUpInputForm
+						name="email"
+						type="email"
+						handleChange={this.handleChange}
+						value={this.state.email}
+						label="email"
+						required
+					/>
+					<SignUpInputForm
+						name="password"
+						type="password"
+						value={this.state.password}
+						handleChange={this.handleChange}
+						label="password"
+						required
+					/>
+					<div className="button">
+						<SquareButton type="submit">Submit</SquareButton>
+						<SquareButton onClick={signInWithgoogle} isBlue>
+							Sign in with Google
+						</SquareButton>
+					</div>
+				</form>
+			</div>
+		);
   }
 }
 

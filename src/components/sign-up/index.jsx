@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react';
 import RectangularButton from '../custom-buttons/rectangular-btn';
-import FormInput from '../form-input';
+import {SignUpInputForm}  from '../form-input';
 import './sign-up.scss';
 import {auth, createUserProfileDocument} from '../../firebase/firebase.utils'
 
@@ -55,46 +55,46 @@ class SignUp extends React.Component {
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
-      <div className='sign-up'>
-        <h2 className='title'>I do not have a account</h2>
-        <span>Sign up with your email and password</span>
-        <form className='sign-up-form' onSubmit={this.handleSubmit}>
-          <FormInput
-            type='text'
-            name='displayName'
-            value={displayName}
-            onChange={this.handleChange}
-            label='Display Name'
-            required
-          />
-          <FormInput
-            type='email'
-            name='email'
-            value={email}
-            onChange={this.handleChange}
-            label='Email'
-            required
-          />
-          <FormInput
-            type='password'
-            name='password'
-            value={password}
-            onChange={this.handleChange}
-            label='Password'
-            required
-          />
-          <FormInput
-            type='password'
-            name='confirmPassword'
-            value={confirmPassword}
-            onChange={this.handleChange}
-            label='Confirm Password'
-            required
-          />
-          <RectangularButton type='submit'>SIGN UP</RectangularButton>
-        </form>
-      </div>
-    );
+			<div className="sign-up">
+				<h2 className="title">I do not have a account</h2>
+				<span>Sign up with your email and password</span>
+				<form className="sign-up-form" onSubmit={this.handleSubmit}>
+					<SignUpInputForm
+						type="text"
+						name="displayName"
+						value={displayName}
+						onChange={this.handleChange}
+						label="Display Name"
+						required
+					/>
+					<SignUpInputForm
+						type="email"
+						name="email"
+						value={email}
+						onChange={this.handleChange}
+						label="Email"
+						required
+					/>
+					<SignUpInputForm
+						type="password"
+						name="password"
+						value={password}
+						onChange={this.handleChange}
+						label="Password"
+						required
+					/>
+					<SignUpInputForm
+						type="password"
+						name="confirmPassword"
+						value={confirmPassword}
+						onChange={this.handleChange}
+						label="Confirm Password"
+						required
+					/>
+					<RectangularButton type="submit">SIGN UP</RectangularButton>
+				</form>
+			</div>
+		);
   }
 }
 

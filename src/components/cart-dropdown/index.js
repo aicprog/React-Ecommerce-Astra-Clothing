@@ -22,7 +22,7 @@ const CartDropdown = ({cartItems, dispatch}) => {
 						<span className="empty-message">Your cart is empty</span>
 					)}
 				</div>
-				<Link to="/checkout">
+				<Link to="/cart">
 					<RectangularBtn onClick={() => dispatch(toggleCartHidden())}>
 						Go To checkout
 					</RectangularBtn>

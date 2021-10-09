@@ -1,12 +1,7 @@
 import React, {useEffect} from 'react';
 import './App.css';
 //pages 
-import {
-	HomePage,
-	ShopPage,
-	LoginSignUp,
-	CheckoutPage,
-} from "./pages";
+import { HomePage, ShopPage, LoginSignUp, CartPage } from "./pages";
 
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Header from './components/header';
@@ -21,11 +16,6 @@ const App = (props, {currentUser}) => {
 	//let unsubscribeFromAuth = null;
 
 	const { setCurrentUser } = props;
-
-
-	useEffect(() => {
-		checkForUser();
-	}, []);
 
 	const checkForUser = () => {
 		return auth.onAuthStateChanged(async (userAuth) => {
@@ -47,6 +37,11 @@ const App = (props, {currentUser}) => {
 		});
 	};
 
+
+	useEffect(() => {
+		checkForUser();
+	}, []);
+
 	return (
 		<div>
 			<Header />
@@ -60,12 +55,11 @@ const App = (props, {currentUser}) => {
 						props.currentUser ? (
 							<Redirect to="/" />
 						) : (
-							<LoginSignUp/>
-              //<ShopPage/>
+							<LoginSignUp />
 						)
 					}
 				/>
-				<Route exact path="/checkout" component={CheckoutPage} />
+				<Route exact path="/cart" component={CartPage} />
 			</Switch>
 		</div>
 	);
