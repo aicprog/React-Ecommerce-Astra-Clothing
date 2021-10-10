@@ -13,7 +13,7 @@ import CollectionsOverview from "./collections-overview"
 import Confirmation from "./confirmation"
 import StripeButtonCheckout from './StripeButton'
 import Sidebar from './Sidebar'
-import Footer from './Footer'
+import Footer from './footer'
 
 
 
