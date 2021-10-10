@@ -87,7 +87,7 @@ const Wrapper = styled.div`
 			&:last-child {
 				width: 8%;
 
-				@media (max-width: 400px) {
+				@media (max-width: 600px) {
 					width: 12%;
 				}
 			}
