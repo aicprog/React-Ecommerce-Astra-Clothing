@@ -5,13 +5,13 @@ import 'firebase/compat/auth';
 
 
 const config = {
-    apiKey: "AIzaSyDJJYG02nE87XpL7xT96fKZ_qPPTmP4Wro",
-    authDomain: "astrac-db.firebaseapp.com",
-    projectId: "astrac-db",
-    storageBucket: "astrac-db.appspot.com",
-    messagingSenderId: "398974785288",
-    appId: "1:398974785288:web:fde698ab8a1761c14bfebd",
-    measurementId: "G-FC458DXMYC"
+	apiKey: process.env.REACT_APP_FIREBASE_KEY,
+	authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+	projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+	storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+	appId: process.env.REACT_APP_FIREBASE_APP_ID,
+	measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 //if snapshot does not exist, create one. 
