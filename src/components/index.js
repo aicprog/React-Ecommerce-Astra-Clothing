@@ -31,5 +31,5 @@ export {
     Confirmation, 
     StripeButtonCheckout, 
     Sidebar, 
-    Footer
+    Footer,
 };
