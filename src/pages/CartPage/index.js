@@ -19,7 +19,7 @@ const CartPage = ({ cartItems, total, user }) => {
 					<span>Product</span>
 				</div>
 				<div className="header-block">
-					<span>Description</span>
+					<span>Name</span>
 				</div>
 				<div className="header-block">
 					<span>Quantity</span>
@@ -62,49 +62,55 @@ export default connect(mapStateToProps)(CartPage);
 
 
 const Wrapper = styled.div`
-    width: 55%;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto 0;
+	width: 55%;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px auto 0;
 
-    .checkout-header {
-        width: 100%;
-        padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid darkgrey;
-
-        .header-block {
-            text-transform: capitalize;
-            width: 23%;
-
-            &:last-child {
-                width: 8%;
-            }
-        }
-    }
-
-    .total {
-        margin-top: 30px;
-        margin-left: auto;
-        font-size: 36px;
-    }
-
-    .test-card{
-        padding-top: 2rem;
-        color: red;
-
-        .center{
-            text-align: center;
-        }
-    }
-
-	.btn{
-		margin-top: 1.5rem;
+	@media (max-width: 776px) {
+		width: 85%;
 	}
 
-    
+	.checkout-header {
+		width: 100%;
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid darkgrey;
+
+		.header-block {
+			text-transform: capitalize;
+			width: 23%;
+
+			&:last-child {
+				width: 8%;
+
+				@media (max-width: 400px) {
+					width: 12%;
+				}
+			}
+		}
+	}
+
+	.total {
+		margin-top: 30px;
+		margin-left: auto;
+		font-size: 36px;
+	}
+
+	.test-card {
+		padding-top: 2rem;
+		color: red;
+
+		.center {
+			text-align: center;
+		}
+	}
+
+	.btn {
+		margin-top: 1.5rem;
+	}
 `;
 
