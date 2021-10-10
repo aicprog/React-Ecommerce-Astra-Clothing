@@ -2,12 +2,10 @@ import React from 'react';
 import StripeCheckout from 'react-stripe-checkout'
 import { RectangularButton } from '..';
 import logo from "../../assets/logo.png";
-//import { formatPrice } from '../utils/helpers';
 
 
 //turn to cents for stripe 
 const StripeButton = ({price}) => {
-    const priceForStripe = price * 100;
 	const publishableKey = process.env.REACT_APP_STRIPE_PUBLIC_KEY;
     
     const onToken = token =>{
