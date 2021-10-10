@@ -28,7 +28,7 @@ const Header = ({currentUser, hidden, toggleSidebar}) => {
 				<div className="header-wrapper">
 					<Link className="logo-container" to="/">
 						<GiTargetShot size="3rem" />
-						<span className="logo-title">Astrac</span>
+						<span className="logo-title">Astra</span>
 					</Link>
 
 					<div className="menu-options">

@@ -5,7 +5,7 @@ const Footer = () => {
 		<Wrapper>
 			<h5>
 				&copy; {new Date().getFullYear()}
-				<span>Astrac Clothing</span>
+				<span>Astra Clothing</span>
 			</h5>
 			<h5>All Rights Reserved</h5>
 		</Wrapper>
