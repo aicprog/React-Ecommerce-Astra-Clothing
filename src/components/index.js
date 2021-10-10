@@ -11,8 +11,8 @@ import SignUp from "./sign-in";
 import SignIn from "./sign-up";
 import CollectionsOverview from "./collections-overview"
 import Confirmation from "./confirmation"
-import StripeButtonCheckout from './StripeButton'
-import Sidebar from './Sidebar'
+import StripeButtonCheckout from './stripeButton'
+import Sidebar from './sidebar'
 import Footer from './footer'
 
 
