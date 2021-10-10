@@ -3,7 +3,6 @@ import CollectionPreview from "./collection-preview";
 import RectangularButton from "./custom-buttons/rectangular-btn";
 import RoundButton from "./custom-buttons/round-btn";
 import Directory from "./directory";
-
 import Header from "./header";
 import Hero from "./hero";
 import MenuItem from "./menu-item";
