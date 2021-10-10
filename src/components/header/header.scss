@@ -96,6 +96,12 @@
 .burger{
   display: none;
   cursor: pointer;
+  color: rgb(255, 255, 225);
+  size: 2rem;
+  cursor: pointer;
+  svg {
+    font-size: 2rem;
+  }
 
   @include media("<=tablet"){
     display: block;
@@ -103,11 +109,3 @@
   
 }
 
-.burger div{
-
-  width: 25px;
-  height: 3px;
-  background-color: rgb(266, 266, 226);
-  margin: 5px;
-  transition: all 0.3s ease;
-}

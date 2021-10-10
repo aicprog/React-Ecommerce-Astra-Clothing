@@ -37,14 +37,16 @@ const CartPage = ({ cartItems, total, user }) => {
 			<div className="total">
 				<span>TOTAL: ${total}</span>
 			</div>
-			{user ? (
-				<StripeButtonCheckout price={total} />
-			) : (
-				<Link to="/signin">
-					<RectangularButton>Sign In To Checkout</RectangularButton>
-				</Link>
-			)}
-
+			<div className="btn">
+					{user ? (
+						<StripeButtonCheckout price={total} />
+						) : (
+							<Link to="/signin">
+							<RectangularButton>Sign In To Checkout</RectangularButton>
+							</Link>
+					)}
+					
+			</div>
             <div className="test-card">* Please use the following test credit card for test payments: <div className="center"> 4242 4242 4242 4242 - Expo: 01/45 - CVV: 123  </div></div>
 		</Wrapper>
 	);
@@ -98,6 +100,10 @@ const Wrapper = styled.div`
             text-align: center;
         }
     }
+
+	.btn{
+		margin-top: 1.5rem;
+	}
 
     
 `;

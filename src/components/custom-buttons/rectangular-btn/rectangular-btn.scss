@@ -16,6 +16,12 @@
     display: flex;
     justify-content: center;
 
+
+    @media screen and (max-width: 992px) {
+      min-width: 130px;
+		}
+    
+
     &:hover {
       background-color: white;
       color: black;

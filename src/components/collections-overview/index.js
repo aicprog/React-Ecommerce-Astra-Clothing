@@ -8,7 +8,11 @@ import { createStructuredSelector } from "reselect";
 import {selectCollectionsForPreview} from "../../redux/shop/shop.selector";
 
 const CollectionsOverview = ({collections}) => {
-	console.log(collections)
+
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
     return (
 			<Wrapper>
 				{collections.map(({ id, ...otherCollectionProps }) => (

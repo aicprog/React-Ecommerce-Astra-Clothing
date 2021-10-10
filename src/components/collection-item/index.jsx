@@ -17,9 +17,9 @@ const CollectionItem = ({item, addItemToCart}) => {
             />
             <div className="collection-footer">
                 <span className='name'> {name}</span>
-                <span className='price'> {price}</span>
+                <span className='price'> ${price}</span>
             </div>
-        <RectangularButton inverted onClick={()=>{addItemToCart(item)}} >Add to cart</RectangularButton>
+        <RectangularButton inverted onClick={()=>{addItemToCart(item)}} ><span className="button-text">Add to cart</span></RectangularButton>
         </div> 
 
 )}

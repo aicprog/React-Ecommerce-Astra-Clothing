@@ -1,0 +1,4 @@
+export const NavbarActionTypes = {
+	SET_TOGGLE_SIDEBAR: "SET_TOGGLE_SIDEBAR",
+	// SET_TOGGLE_SIDEBAR: "SET_TOGGLE_SIDEBAR",
+};

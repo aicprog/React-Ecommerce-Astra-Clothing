@@ -5,6 +5,14 @@
     height: 350px;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: 992px) {
+			width: 30vw;
+		}
+
+		@media screen and (max-width: 650px) {
+			width: 40vw;
+		}
   
     .image {
       width: 100%;
@@ -22,6 +30,14 @@
       height: 50px;
       display: none;
     }
+
+    .button-text{
+      @media screen and (max-width: 992px) {
+        font-size: 12px;
+        min-width: 120px;
+		  }
+    }
+
 
     &:hover{
       .image{
@@ -44,11 +60,19 @@
       .name {
         width: 90%;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 992px) {
+          padding-left: 5px;
+          font-size: 1rem;
+		    }
       }
   
       .price {
         width: 10%;
-
+        @media screen and (max-width: 992px) {
+          padding-right: 2rem;
+          font-size: 1rem;
+		    }
       }
     }
   }

@@ -5,6 +5,8 @@ import CollectionItem from '../../components/collection-item'
 import { connect } from 'react-redux'
 //selector
 import { selectCollection } from '../../redux/shop/shop.selector'
+import { Link } from 'react-router-dom'
+import RectangularButton from '../../components/custom-buttons/rectangular-btn'
 
 
 const CollectionPage = ({collection}) => {
@@ -24,7 +26,13 @@ const CollectionPage = ({collection}) => {
 						<CollectionItem key={item.id} item={item} />
 					))}
 				</div>
+				
+				<Link className="button-wrapper" to="/shop">
+				<RectangularButton>Back to All Products</RectangularButton>
+				</Link>
 			</CollectionWrapper>
+
+			
 		);
 }
 
@@ -38,7 +46,6 @@ const CollectionWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
 
 	.title {
 		font-size: 38px;
@@ -53,5 +60,17 @@ const CollectionWrapper = styled.div`
 		& .collection-item {
 			margin-bottom: 30px;
 		}
+
+		@media screen and (max-width: 992px) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		@media screen and (max-width: 650px) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	.button-wrapper{
+		margin: 3rem;
 	}
 `;

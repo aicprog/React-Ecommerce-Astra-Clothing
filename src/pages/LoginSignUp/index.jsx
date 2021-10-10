@@ -6,7 +6,7 @@ import "./LoginSignUp.scss";
 
 const LoginSignUp = () =>(
     <div className='sign-in-and-sign-up'>
-        <SignIn/>
+        <SignIn className="sign-in"/>
         <SignUp/>
     </div>
 )

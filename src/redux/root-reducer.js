@@ -6,6 +6,7 @@ import userReducer from "./user/user.reducer";
 import cartReducer from "./cart/cart.reducer";
 import directoryReducer from "./directory/directory.reducer";
 import shopReducer from "./shop/shop.reducer";
+import navbarReducer from "./navbar/navbar.reducer";
 //import shopReducer from "./shop/shop.reducer";
 
 const persistConfig = {
@@ -19,6 +20,7 @@ const rootReducer = combineReducers({
 	cart: cartReducer,
 	directory: directoryReducer,
 	shop: shopReducer,
+	navbar: navbarReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);

@@ -10,6 +10,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
 				price: 25,
 				stock: 3,
+				season: "fall",
 			},
 			{
 				id: 2,
@@ -17,6 +18,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
 				price: 18,
 				stock: 5,
+				season: "winter",
 			},
 			{
 				id: 3,
@@ -24,6 +26,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
 				price: 35,
 				stock: 1,
+				season: "fall",
 			},
 			{
 				id: 4,
@@ -31,6 +34,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
 				price: 25,
 				stock: 10,
+				season: "fall",
 			},
 			{
 				id: 5,
@@ -38,6 +42,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/YTjW3vF/green-beanie.png",
 				price: 18,
 				stock: 6,
+				season: "winter",
 			},
 			{
 				id: 6,
@@ -45,6 +50,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
 				price: 14,
 				stock: 13,
+				season: "summer",
 			},
 			{
 				id: 7,
@@ -52,6 +58,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/bLB646Z/red-beanie.png",
 				price: 18,
 				stock: 20,
+				season: "fall",
 			},
 			{
 				id: 8,
@@ -59,6 +66,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/1f2nWMM/wolf-cap.png",
 				price: 14,
 				stock: 30,
+				season: "summer",
 			},
 			{
 				id: 9,
@@ -66,6 +74,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
 				price: 16,
 				stock: 13,
+				season: "summer",
 			},
 		],
 	},
@@ -80,6 +89,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
 				price: 220,
 				stock: 9,
+				season: "fall",
 			},
 			{
 				id: 11,
@@ -87,6 +97,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/dJbG1cT/yeezy.png",
 				price: 280,
 				stock: 40,
+				season: "summer",
 			},
 			{
 				id: 12,
@@ -94,6 +105,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
 				price: 110,
 				stock: 2,
+				season: "winter",
 			},
 			{
 				id: 13,
@@ -101,6 +113,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
 				price: 160,
 				stock: 11,
+				season: "summer",
 			},
 			{
 				id: 14,
@@ -108,6 +121,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/QcvzydB/nikes-red.png",
 				price: 160,
 				stock: 13,
+				season: "summer",
 			},
 			{
 				id: 15,
@@ -115,6 +129,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/fMTV342/nike-brown.png",
 				price: 160,
 				stock: 12,
+				season: "fall",
 			},
 			{
 				id: 16,
@@ -122,6 +137,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/w4k6Ws9/nike-funky.png",
 				price: 190,
 				stock: 9,
+				season: "summer",
 			},
 			{
 				id: 17,
@@ -129,6 +145,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/Mhh6wBg/timberlands.png",
 				price: 200,
 				stock: 8,
+				season: "fall",
 			},
 		],
 	},
@@ -143,6 +160,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
 				price: 125,
 				stock: 15,
+				season: "fall",
 			},
 			{
 				id: 19,
@@ -150,6 +168,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
 				price: 90,
 				stock: 18,
+				season: "summer",
 			},
 			{
 				id: 20,
@@ -157,6 +176,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
 				price: 90,
 				stock: 23,
+				season: "fall",
 			},
 			{
 				id: 21,
@@ -164,6 +184,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
 				price: 165,
 				stock: 5,
+				season: "winter",
 			},
 			{
 				id: 22,
@@ -171,6 +192,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
 				price: 185,
 				stock: 16,
+				season: "winter",
 			},
 		],
 	},
@@ -185,6 +207,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
 				price: 25,
 				stock: 12,
+				season: "summer",
 			},
 			{
 				id: 24,
@@ -192,6 +215,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
 				price: 20,
 				stock: 6,
+				season: "spring",
 			},
 			{
 				id: 25,
@@ -199,6 +223,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/KV18Ysr/floral-skirt.png",
 				price: 80,
 				stock: 23,
+				season: "spring",
 			},
 			{
 				id: 26,
@@ -206,6 +231,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png",
 				price: 80,
 				stock: 11,
+				season: "spring",
 			},
 			{
 				id: 27,
@@ -213,6 +239,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/KmSkMbH/striped-sweater.png",
 				price: 45,
 				stock: 4,
+				season: "winter",
 			},
 			{
 				id: 28,
@@ -220,6 +247,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
 				price: 135,
 				stock: 7,
+				season: "summer",
 			},
 			{
 				id: 29,
@@ -227,6 +255,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
 				price: 20,
 				stock: 3,
+				season: "summer",
 			},
 		],
 	},
@@ -241,20 +270,16 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/xJS0T3Y/camo-vest.png",
 				price: 325,
 				stock: 25,
+				season: "fall",
 			},
-			{
-				id: 31,
-				name: "Floral T-shirt",
-				imageUrl: "https://i.ibb.co/qMQ75QZ/floral-shirt.png",
-				price: 20,
-				stock: 14,
-			},
+
 			{
 				id: 32,
 				name: "Black & White Longsleeve",
 				imageUrl: "https://i.ibb.co/55z32tw/long-sleeve.png",
 				price: 25,
 				stock: 18,
+				season: "fall",
 			},
 			{
 				id: 33,
@@ -262,6 +287,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/RvwnBL8/pink-shirt.png",
 				price: 25,
 				stock: 8,
+				season: "summer",
 			},
 			{
 				id: 34,
@@ -269,6 +295,7 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
 				price: 40,
 				stock: 1,
+				season: "fall",
 			},
 			{
 				id: 35,
@@ -276,9 +303,312 @@ const SHOP_DATA = {
 				imageUrl: "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
 				price: 25,
 				stock: 6,
+				season: "summer",
 			},
 		],
 	},
+	fall: {
+		id: 6,
+		title: "Fall",
+		routeName: "fall",
+		items: [
+			{
+				id: 1,
+				name: "Brown Brim",
+				imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+				price: 25,
+				stock: 3,
+				season: "fall",
+			},
+			{
+				id: 3,
+				name: "Brown Cowboy",
+				imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+				price: 35,
+				stock: 1,
+				season: "fall",
+			},
+			{
+				id: 4,
+				name: "Grey Brim",
+				imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
+				price: 25,
+				stock: 10,
+				season: "fall",
+			},
+
+			{
+				id: 7,
+				name: "Red Beanie",
+				imageUrl: "https://i.ibb.co/bLB646Z/red-beanie.png",
+				price: 18,
+				stock: 20,
+				season: "fall",
+			},
+
+			{
+				id: 10,
+				name: "Adidas NMD",
+				imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
+				price: 220,
+				stock: 9,
+				season: "fall",
+			},
+
+			{
+				id: 15,
+				name: "Nike Brown High Tops",
+				imageUrl: "https://i.ibb.co/fMTV342/nike-brown.png",
+				price: 160,
+				stock: 12,
+				season: "fall",
+			},
+
+			{
+				id: 17,
+				name: "Timberlands",
+				imageUrl: "https://i.ibb.co/Mhh6wBg/timberlands.png",
+				price: 200,
+				stock: 8,
+				season: "fall",
+			},
+
+			{
+				id: 18,
+				name: "Black Jean Shearling",
+				imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
+				price: 125,
+				stock: 15,
+				season: "fall",
+			},
+
+			{
+				id: 20,
+				name: "Grey Jean Jacket",
+				imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
+				price: 90,
+				stock: 23,
+				season: "fall",
+			},
+
+			{
+				id: 30,
+				name: "Camo Down Vest",
+				imageUrl: "https://i.ibb.co/xJS0T3Y/camo-vest.png",
+				price: 325,
+				stock: 25,
+				season: "fall",
+			},
+
+			{
+				id: 32,
+				name: "Black & White Longsleeve",
+				imageUrl: "https://i.ibb.co/55z32tw/long-sleeve.png",
+				price: 25,
+				stock: 18,
+				season: "fall",
+			},
+
+			{
+				id: 34,
+				name: "Jean Long Sleeve",
+				imageUrl: "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
+				price: 40,
+				stock: 1,
+				season: "fall",
+			},
+		],
+	},
+
+	// winter: {
+	// 	id: 6,
+	// 	title: "winter",
+	// 	items: [
+	// 		{
+	// 			id: 2,
+	// 			name: "Blue Beanie",
+	// 			imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+	// 			price: 18,
+	// 			stock: 5,
+	// 			season: "winter",
+	// 		},
+	// 		{
+	// 			id: 5,
+	// 			name: "Green Beanie",
+	// 			imageUrl: "https://i.ibb.co/YTjW3vF/green-beanie.png",
+	// 			price: 18,
+	// 			stock: 6,
+	// 			season: "winter",
+	// 		},
+	// 		{
+	// 			id: 12,
+	// 			name: "Black Converse",
+	// 			imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
+	// 			price: 110,
+	// 			stock: 2,
+	// 			season: "winter",
+	// 		},
+	// 		{
+	// 			id: 21,
+	// 			name: "Brown Shearling",
+	// 			imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
+	// 			price: 165,
+	// 			stock: 5,
+	// 			season: "winter",
+	// 		},
+	// 		{
+	// 			id: 22,
+	// 			name: "Tan Trench",
+	// 			imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
+	// 			price: 185,
+	// 			stock: 16,
+	// 			season: "winter",
+	// 		},
+
+	// 		{
+	// 			id: 27,
+	// 			name: "Striped Sweater",
+	// 			imageUrl: "https://i.ibb.co/KmSkMbH/striped-sweater.png",
+	// 			price: 45,
+	// 			stock: 4,
+	// 			season: "winter",
+	// 		},
+	// 	],
+	// },
+
+	// summer: {
+	// 	title: "Summer",
+	// 	items: [
+	// 		{
+	// 			id: 6,
+	// 			name: "Palm Tree Cap",
+	// 			imageUrl: "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
+	// 			price: 14,
+	// 			stock: 13,
+	// 			season: "summer",
+	// 		},
+	// 		{
+	// 			id: 8,
+	// 			name: "Wolf Cap",
+	// 			imageUrl: "https://i.ibb.co/1f2nWMM/wolf-cap.png",
+	// 			price: 14,
+	// 			stock: 30,
+	// 			season: "summer",
+	// 		},
+	// 		{
+	// 			id: 9,
+	// 			name: "Blue Snapback",
+	// 			imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+	// 			price: 16,
+	// 			stock: 13,
+	// 			season: "summer",
+	// 		},
+	// 		{
+	// 			id: 11,
+	// 			name: "Adidas Yeezy",
+	// 			imageUrl: "https://i.ibb.co/dJbG1cT/yeezy.png",
+	// 			price: 280,
+	// 			stock: 40,
+	// 			season: "summer",
+	// 		},
+	// 		{
+	// 			id: 13,
+	// 			name: "Nike White AirForce",
+	// 			imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
+	// 			price: 160,
+	// 			stock: 11,
+	// 			season: "summer",
+	// 		},
+	// 		{
+	// 			id: 14,
+	// 			name: "Nike Red High Tops",
+	// 			imageUrl: "https://i.ibb.co/QcvzydB/nikes-red.png",
+	// 			price: 160,
+	// 			stock: 13,
+	// 			season: "summer",
+	// 		},
+	// 		{
+	// 			id: 16,
+	// 			name: "Air Jordan Limited",
+	// 			imageUrl: "https://i.ibb.co/w4k6Ws9/nike-funky.png",
+	// 			price: 190,
+	// 			stock: 9,
+	// 			season: "summer",
+	// 		},
+
+	// 		{
+	// 			id: 19,
+	// 			name: "Blue Jean Jacket",
+	// 			imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
+	// 			price: 90,
+	// 			stock: 18,
+	// 			season: "summer",
+	// 		},
+
+	// 		{
+	// 			id: 23,
+	// 			name: "Blue Tanktop",
+	// 			imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
+	// 			price: 25,
+	// 			stock: 12,
+	// 			season: "summer",
+	// 		},
+	// 		{
+	// 			id: 28,
+	// 			name: "Yellow Track Suit",
+	// 			imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
+	// 			price: 135,
+	// 			stock: 7,
+	// 			season: "summer",
+	// 		},
+	// 		{
+	// 			id: 29,
+	// 			name: "White Blouse",
+	// 			imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
+	// 			price: 20,
+	// 			stock: 3,
+	// 			season: "summer",
+	// 		},
+	// 	],
+	// },
+	// spring: {
+	// 	title: "Spring",
+	// 	items: [
+	// 		{
+	// 			id: 24,
+	// 			name: "Floral Blouse",
+	// 			imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
+	// 			price: 20,
+	// 			stock: 6,
+	// 			season: "spring",
+	// 		},
+	// 		{
+	// 			id: 25,
+	// 			name: "Floral Dress",
+	// 			imageUrl: "https://i.ibb.co/KV18Ysr/floral-skirt.png",
+	// 			price: 80,
+	// 			stock: 23,
+	// 			season: "spring",
+	// 		},
+	// 		{
+	// 			id: 26,
+	// 			name: "Red Dots Dress",
+	// 			imageUrl: "https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png",
+	// 			price: 80,
+	// 			stock: 11,
+	// 			season: "spring",
+	// 		},
+
+	// 		{
+	// 			id: 31,
+	// 			name: "Floral T-shirt",
+	// 			imageUrl: "https://i.ibb.co/qMQ75QZ/floral-shirt.png",
+	// 			price: 20,
+	// 			stock: 14,
+	// 			season: "summer",
+	// 		},
+	// 	],
+	// },
 };
 
 export default SHOP_DATA;

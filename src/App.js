@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import './App.css';
 //pages 
-import { HomePage, ShopPage, LoginSignUp, CartPage } from "./pages";
+import { HomePage, ShopPage, LoginSignUp, CartPage, AboutPage } from "./pages";
 
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Header from './components/header';
@@ -10,6 +10,7 @@ import {connect} from 'react-redux'
 import {setCurrentUser} from './redux/user/user.actions'
 import {selectCurrentUser} from './redux/user/user.selectors'
 import {createStructuredSelector} from 'reselect'
+import { Footer, Sidebar } from './components';
 
 //props.currentUser.payload.user.currentUser;
 const App = (props, {currentUser}) => {
@@ -45,8 +46,10 @@ const App = (props, {currentUser}) => {
 	return (
 		<div>
 			<Header />
+			<Sidebar/>
 			<Switch>
 				<Route exact path="/" component={HomePage} />
+				<Route exact path="/about" component={AboutPage} />
 				<Route path="/shop" component={ShopPage} />
 				<Route
 					exact
@@ -61,6 +64,7 @@ const App = (props, {currentUser}) => {
 				/>
 				<Route exact path="/cart" component={CartPage} />
 			</Switch>
+			<Footer/>
 		</div>
 	);
 };

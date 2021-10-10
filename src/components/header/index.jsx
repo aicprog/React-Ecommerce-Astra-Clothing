@@ -3,6 +3,7 @@ import './header.scss'
 import {Link} from 'react-router-dom'
 import { GiTargetShot } from 'react-icons/gi';
 import {connect} from 'react-redux'
+import { FaBars } from "react-icons/fa";
 
 
 //firebase 
@@ -15,7 +16,10 @@ import { createStructuredSelector } from "reselect";
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 
-const Header = ({currentUser, hidden}) => {
+
+import { toggleSidebar } from "../../redux/navbar/navbar.actions";
+
+const Header = ({currentUser, hidden, toggleSidebar}) => {
     
 
     
@@ -41,10 +45,7 @@ const Header = ({currentUser, hidden}) => {
 						</Link>
 
 						{currentUser ? (
-							<div
-								className="menu-option"
-								onClick={() => auth.signOut()}
-							>
+							<div className="menu-option" onClick={() => auth.signOut()}>
 								Sign Out
 							</div>
 						) : (
@@ -52,18 +53,12 @@ const Header = ({currentUser, hidden}) => {
 								Sign In
 							</Link>
 						)}
-						
-						<CartIcon className="menu-option"/>
 
-						
+						<CartIcon className="menu-option" />
 					</div>
 					{hidden ? null : <CartDropdown />}
 
-					<div className="burger">
-						<div className="line1"></div>
-						<div className="line2"></div>
-						<div className="line3"></div>
-					</div>
+					<FaBars className="burger" onClick={toggleSidebar}/>
 				</div>
 			</nav>
 		);
@@ -74,4 +69,11 @@ const mapStateToProps = (state) => createStructuredSelector({
 	hidden: selectCartHidden
 })
 
-export default connect(mapStateToProps)(Header)
+const mapDispatchToProps = (dispatch) => {
+	return {
+		toggleSidebar: () => dispatch(toggleSidebar()),
+	};
+};
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header)
