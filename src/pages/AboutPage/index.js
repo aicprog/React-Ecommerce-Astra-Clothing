@@ -13,21 +13,16 @@ const AboutPage = () => {
 						<h2>Our Story</h2>
 						<div className="underline"></div>
 						<p>
-							The finest quality furniture with a commitment to the environment
+							The finest quality clothes with a commitment to the environment
 							and our customer. We pride ourselves on our world renowed
-							furniture and quality of service.
+							fabric and quality of service.
 							<br />
 							<br />
-							Our story began in our own home over 50 years ago. Our family has
-							always believed, and continues to believe, that furniture carries
-							with it the emotion of joy and can breathe life into one's home
-							and reshape the way you interact in your space.
+							Our story began in our own home over 70 years ago in our basement where we hand stitched every shirt, pants, hat.
+							As we have expanded, we continue to believe that it is vital to bring this quality to our customers.
 							<br />
 							<br />
-							From quick fixes such as adding greenery or switching up the
-							lighting, to slightly bigger tasks, such as painting a dresser or
-							creating a statement wall, there are plenty of easy ways to
-							refresh your home. Let us help you make your house into a home.
+							Let us help you pick and build your style so you can comfortably and stylishly conquer your day!
 						</p>
 					</div>
 				</article>
