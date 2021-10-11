@@ -5,28 +5,49 @@
     padding: 20px 60px;
     justify-content: center;
     
-  
-    .title {
-      font-size: 28px;
-      margin-bottom: 25px;
-      text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.65);
 
-      &:hover{
-        color: #000
-      }
+     .title {
+       font-size: 28px;
+       margin-bottom: 25px;
+       text-transform: uppercase;
+       color: rgb(0, 0, 0);
+       opacity: 0.6;
+       transition: all 0.5s ease-in;
+       width: 5rem;
+       position: relative;
+       
+       :hover{
+         color: #000;
+
+        
+        }
+
     }
-  
+
+       ::after { 
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        background: none repeat scroll 0 0 transparent;
+        height: 2px;
+        width: 0;
+        background: #000;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+
+      }
+
+      a:hover::after { 
+        width: 100%; 
+        left: 0; 
+      }
+
     .preview {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      // @media screen and (max-width: 992px) {
-      //   display: grid;
-			//   grid-template-columns: 1fr 1fr 1fr;
-      //   grid-gap: 10px;
-		  // }
 
       @media screen and (max-width: 650px) {
         display: grid;

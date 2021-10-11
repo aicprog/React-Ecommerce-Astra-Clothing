@@ -61,9 +61,9 @@ const CollectionWrapper = styled.div`
 			margin-bottom: 30px;
 		}
 
-		@media screen and (max-width: 992px) {
+		/* @media screen and (max-width: 992px) {
 			grid-template-columns: 1fr 1fr 1fr;
-		}
+		} */
 
 		@media screen and (max-width: 650px) {
 			grid-template-columns: 1fr 1fr;
