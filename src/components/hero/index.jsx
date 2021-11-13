@@ -16,7 +16,7 @@ const Hero = () => {
 								Shop Fall
 							</RoundButton>
 
-							<RoundButton goTo="/&nbspshop">Shop all&nbsp;</RoundButton>
+							<RoundButton goTo="/shop">Shop all&nbsp;</RoundButton>
 						</div>
 					</div>
 				</div>
